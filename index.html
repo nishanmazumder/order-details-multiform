@@ -1,0 +1,123 @@
+<html lang="en">
+    <head>
+        <title>Multi step Form</title>
+        <!--Custom css-->
+        <link rel="stylesheet" href="order-form.css">
+    </head>
+
+    <body>
+        <!--Main Container Start-->
+		<div class="nm-order-details">
+            <!--Form Header-->
+			<div class="nm-order-details-header">
+				<h1>Order Option</h1>
+				<p>Product dtails and ordering Instruction</p>
+			</div>
+			
+			<!--Form Start-->
+			<form id="regForm" action="">
+                
+				
+				<!--First Step Start-->
+				<div class="nm-order-input-area tab">
+					<div class="nm-form-group">
+						<label>Select Product Option</label>
+						<input name="nm_product_name" type="text" class="" id="" placeholder="Premium Content 500 words">
+					</div>
+					<div class="nm-info-block">
+						<p class="nm-float-left">Estimate complitation Time: 10days </p>
+						
+						<p class="nm-text-right">Price : 42$</p>
+					</div>
+					<div class="nm-clear-fix"></div>
+					<div class="nm-form-group">
+						<label>Select Project</label>
+						<input name="nm_project_name" type="text" class="" id="" placeholder="Money Dr">
+					</div>
+					<div class="nm-form-group">
+						<label>Select URL</label>
+						<input name="nm_project_name" type="text" class="" id="" placeholder="None">
+					</div>
+					<div class="nm-form-group">
+						<label>Select Day</label>
+						<input name="nm_project_name" type="text" class="" id="" placeholder="Not Recuring">
+					</div>
+					<div class="nm-order-info-finalize">
+						<p>This Order price : <span class="nm-colorful nm-text-bold">42$</span> <span>One time</span></p>
+					</div>
+				</div>
+				<!--First Step End-->
+				
+				
+				<!--Second Step Start-->
+				<div class="nm-order-input-area tab">
+					<div class="nm-form-group">
+						<label>Theme Of your Article <span class="nm-text-small">( This will help us to assign your order to the breief where for the niche Example: Travel in ITALY or 10$s10 )</span></label>
+						<textarea name="nm-order-theme-details" id="" rows="3"></textarea>
+					</div>
+					<div class="nm-clear-fix"></div>
+					<div class="nm-form-group">
+						<label>Describe in details what you need</label>
+						<textarea name="nm-describe-theme-details" id="" rows="3"></textarea>
+					</div>
+					<div class="nm-form-group">
+						<label>Reference where we can research the topic <span class="nm-text-small">( 1 url per line )</span></label>
+						<textarea name="nm-order-theme-details" id="" rows="3"></textarea>
+					</div>
+					<div class="nm-form-group nm-form-check">
+						<input type="checkbox" name="nm-confirmation"> <p class="">I confirm that i have provided the writer with the most detailed instruction possible as to what i need to written.</p>
+					</div>
+					<div class="nm-info-block">
+						<p class="nm-text-center">Premium Content 500 Words</p>
+					</div>
+					<div class="nm-form-group">
+						<label>Delay Processing of this service</label>
+						<span class="nm-text-small nm-color-greay">Leav blank to have order processed as soon as payments clear</span>
+						<textarea name="nm-order-delay" id="" rows="3"></textarea>
+					</div>
+					<div class="nm-form-group">
+						<span class="nm-text-small nm-color-red nm-important-note"><span class="nm-text-bold">IMPORTANT</span>&nbsp;&nbsp;Payment for order will be takean at checkout. this services only delays when services is processed </span>
+					</div>
+					<div class="nm-order-info-finalize">
+						<p>This Order price : <span class="nm-colorful nm-text-bold">42$</span> <span>One time</span></p>
+					</div>
+				</div>
+				<!--Second Step End-->
+				
+				
+				
+				<!--Form controller Start-->
+				<div class="nm-order-controller">
+					<ul>
+						<li><button class="" type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button></li>
+						<li><button class="" type="button" id="strBtn">Start</button></li>
+						<li><progress id="progressBar" value="0" max="100"></progress></li>
+						<li><button class="" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button></li>
+					</ul>
+				</div>
+				<!--Form controller End-->
+				<div class="nm-clear-fix"></div>
+				
+				<!--Form Step Count-->
+				<span class="nm-order-cont-step"><p>Step 1 of 2</p></span>
+				
+				
+				<!-- Circles-->
+				<div>
+				  <span class="step"></span>
+				  <span class="step"></span>
+				  <span class="step"></span>
+				  <span class="step"></span>
+				</div>
+				
+				
+				
+            </form>
+			<!--Form End-->
+        </div>
+		<!--Main Container End-->
+		
+		
+		<script type="text/javascript" src="custom.js"></script>
+    </body>
+</html>
