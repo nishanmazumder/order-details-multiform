@@ -1,3 +1,7 @@
+// There have few modification. This code is collect form w3school. 
+
+
+//Multistep form script
 var currentTab = 0; // current tab 0
 showTab(currentTab); // display current tab
 
